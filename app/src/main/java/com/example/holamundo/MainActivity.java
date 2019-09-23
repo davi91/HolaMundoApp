@@ -2,6 +2,7 @@ package com.example.holamundo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)  {
                 System.out.println("Hola Mundo");
+                Intent myIntent = new Intent(getBaseContext(), HelloActivity.class);
+                startActivity(myIntent);
             }
         });
     }
